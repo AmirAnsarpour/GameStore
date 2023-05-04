@@ -19,8 +19,4 @@ $(document).ready(function () {
             $("#last-box-navbar-pc li i").removeClass("bi-x-lg");
         }
     })
-    let img = document.querySelector(".no-select-images");
-    img.ondragstart = () => {
-        return false;
-    };
 });
