@@ -345,6 +345,7 @@ body {
   }
   #card-slider #card-container .card {
     text-align: center;
+    background-color: #1e1e1e;
     margin: 0px 10px;
     transition: all 300ms ease-in-out 0s;
   }
@@ -371,5 +372,38 @@ body {
   }
   #card-slider .right-arrow {
     right: 10px;
+  }
+  #middle-box {
+    background-color: #050505;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #middle-box #middle-box-in {
+    background-color: #1e1e1e;
+    border: 2px solid rgba(10, 10, 10, 0.5);
+    margin: 20px auto;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 250ms ease 0s;
+  }
+  #middle-box #middle-box-in img {
+    margin-right: 15px;
+    float: left;
+    width: 800px;
+    filter: saturate(0.2) brightness(60%);
+    transition: all 250ms ease 0s;
+  }
+  #middle-box #middle-box-in:hover {
+    border: 2px solid #bebebe;
+  }
+  #middle-box #middle-box-in:hover img {
+    filter: saturate(0.7) brightness(95%);
+  }
+  #middle-box #middle-box-in h2,
+  #middle-box #middle-box-in p {
+    color: #fafafa;
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
   }
 }

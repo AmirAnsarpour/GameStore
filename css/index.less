@@ -420,6 +420,7 @@ body {
 
             .card {
                 text-align: center;
+                background-color: @color-black-light;
                 margin: 0px 10px;
                 transition: all 300ms ease-in-out 0s;
 
@@ -454,6 +455,48 @@ body {
 
         .right-arrow {
             right: 10px;
+        }
+    }
+
+    #middle-box {
+        background-color: @color-black-dark;
+        display: flex;
+        justify-content: flex-start;
+
+        #middle-box-in {
+            background-color: @color-black-light;
+            border: 2px solid @color-black-box-shadow;
+            // border-radius: 10px;
+            // padding: 10px;
+            margin: 20px auto;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 250ms ease 0s;
+
+            img {
+                margin-right: 15px;
+                float: left; 
+                width: 800px;
+                filter: saturate(0.2) brightness(60%);
+                transition: all 250ms ease 0s;
+            }
+
+            &:hover {
+                border: 2px solid @color-white-dark;
+            }
+
+            &:hover img {
+                filter: saturate(0.7) brightness(95%);
+            }
+
+            h2,
+            p {
+                color: @color-white-light;
+                margin-left: 15px;
+                display: block;
+                margin: 2px 0 0 0;
+            }
+
         }
     }
 }
